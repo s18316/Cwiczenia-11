@@ -19,16 +19,8 @@ namespace Cwiczenia_11.Service
 
         public List<Doctor> GetDoctors()
         {
-            List<Doctor> list = new List<Doctor>();
-
-            var tmp = _context.Doctor.ToList();
-
-            foreach (Doctor doctor in tmp)
-            {
-                list.Add(doctor);
-            }
-
-            return list;
+            
+            return _context.Doctor.ToList();
         }
 
 
